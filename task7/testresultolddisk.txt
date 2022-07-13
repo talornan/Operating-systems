@@ -1,0 +1,115 @@
+mymkfs = Initialize FS size 1003520
+initDisk: Initializing Disc from myFileSystem.fs, size = 1003520
+initDisk:Disc file myFileSystem.fs existing, With  size 1003520 - same  expected FS size 1003520. Using FS from Disc file
+initDisk:Open file myFileSystem.fs
+
+
+Start Test: myopendir/myclosedir/myreaddir ...
+
+dirtest - old disc mounted
+create/open /dir1 test passed OK
+create/open /dir1/dir12 test passed OK
+create/open /dir1/dir2/dir123 test passed OK
+create/open /dir2 test passed OK
+create/open /dir3 test passed OK
+open / test passed OK
+
+
+Summary: myopendir/myclosedir/myreaddir tests passed OK
+
+
+
+Start Test: file = /file1 for myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek ...
+
+filetest - old disc mounted
+myfopen /file1 with r+ test passed OK
+myfread '111...' from /file1 test passed OK
+myfseek 5000, MYSEEK_SET to /file1 test passed OK
+myfread '222...' from /file1 test passed OK
+myfopen /file1 with r test passed OK
+myfseek 5000+128, MYSEEK_CUR to /file1 test passed OK
+myfscanf to /file1 with d c f test passed OK
+
+
+Summary: myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek tests passed OK
+
+
+
+Start Test: file = /file2 for myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek ...
+
+filetest - old disc mounted
+myfopen /file2 with r+ test passed OK
+myfread '111...' from /file2 test passed OK
+myfseek 5000, MYSEEK_SET to /file2 test passed OK
+myfread '222...' from /file2 test passed OK
+myfopen /file2 with r test passed OK
+myfseek 5000+128, MYSEEK_CUR to /file2 test passed OK
+myfscanf to /file2 with d c f test passed OK
+
+
+Summary: myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek tests passed OK
+
+
+
+Start Test: file = /file3 for myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek ...
+
+filetest - old disc mounted
+myfopen /file3 with r+ test passed OK
+myfread '111...' from /file3 test passed OK
+myfseek 5000, MYSEEK_SET to /file3 test passed OK
+myfread '222...' from /file3 test passed OK
+myfopen /file3 with r test passed OK
+myfseek 5000+128, MYSEEK_CUR to /file3 test passed OK
+myfscanf to /file3 with d c f test passed OK
+
+
+Summary: myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek tests passed OK
+
+
+
+Start Test: file = /dir1/file11 for myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek ...
+
+filetest - old disc mounted
+myfopen /dir1/file11 with r+ test passed OK
+myfread '111...' from /dir1/file11 test passed OK
+myfseek 5000, MYSEEK_SET to /dir1/file11 test passed OK
+myfread '222...' from /dir1/file11 test passed OK
+myfopen /dir1/file11 with r test passed OK
+myfseek 5000+128, MYSEEK_CUR to /dir1/file11 test passed OK
+myfscanf to /dir1/file11 with d c f test passed OK
+
+
+Summary: myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek tests passed OK
+
+
+
+Start Test: file = /dir1/file12 for myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek ...
+
+filetest - old disc mounted
+myfopen /dir1/file12 with r+ test passed OK
+myfread '111...' from /dir1/file12 test passed OK
+myfseek 5000, MYSEEK_SET to /dir1/file12 test passed OK
+myfread '222...' from /dir1/file12 test passed OK
+myfopen /dir1/file12 with r test passed OK
+myfseek 5000+128, MYSEEK_CUR to /dir1/file12 test passed OK
+myfscanf to /dir1/file12 with d c f test passed OK
+
+
+Summary: myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek tests passed OK
+
+
+
+Start Test: file = /dir1/file13 for myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek ...
+
+filetest - old disc mounted
+myfopen /dir1/file13 with r+ test passed OK
+myfread '111...' from /dir1/file13 test passed OK
+myfseek 5000, MYSEEK_SET to /dir1/file13 test passed OK
+myfread '222...' from /dir1/file13 test passed OK
+myfopen /dir1/file13 with r test passed OK
+myfseek 5000+128, MYSEEK_CUR to /dir1/file13 test passed OK
+myfscanf to /dir1/file13 with d c f test passed OK
+
+
+Summary: myfopen/myfclose/myfwrite/myfread/myfprintf/myfscanf/myfseek tests passed OK
+
